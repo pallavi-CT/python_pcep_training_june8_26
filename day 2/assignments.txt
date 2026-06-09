@@ -8,4 +8,23 @@
 
 5. Build a grading system. If marks > 85: A etc.
 
+6. Progressive tax calculator: Build a progressive income tax calculator with multiple tax brackets. The key insight is that each bracket only taxes the income within that band — not the full income.
+Tasks
+    1. Define 4 tax brackets: 0–12,000 = 0%, 12,001–50,000 = 20%, 50,001–150,000 = 40%, 150,001+ = 45%.
+    2. Write a function calc_tax(income) that correctly applies each bracket progressively.
+    3. Also calculate the effective tax rate (total_tax / income * 100).
+    4. Test with incomes: 8000, 35000, 85000, 200000.
+    5. Show a breakdown: how much tax was paid in each bracket.
+    6. Challenge: find the income at which effective rate first exceeds 30% using a while loop.
+
+7. Vending machine engine: Simulate a vending machine's core transaction loop. The machine accepts coins, tracks balance, lets the user pick items, dispenses change, and handles invalid inputs gracefully.
+Tasks
+    1. Define a menu: {'A1': ('Water', 1.50), 'B2': ('Crisps', 1.20), 'C3': ('Cola', 1.80)}.
+    2. Use a while True loop. Each iteration: show balance, prompt for coin or selection.
+    3. Accept coins: 0.10, 0.20, 0.50, 1.00, 2.00. Reject any other value with continue.
+    4. When user enters a code (e.g. 'A1'): check balance >= price. Dispense or print 'Insufficient funds'.
+    5. After dispensing: calculate and display change (balance - price), reset balance.
+    6. Type 'QUIT' to exit. On exit, return all coins (print current balance as refund).
+    7. Track total sales. Print a sales report on exit.
+    
 https://github.com/pallavi-CT/python_pcep_training_june8_26
