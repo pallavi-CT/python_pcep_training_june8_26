@@ -4,4 +4,8 @@
 
 3. Build a permission checker for a file using bitwise flags. Define 4 permissions (READ = 1, WRITE = 2, EXECUTE = 4, ADMIN = 8). Create 3 user roles: viewer = READ, developer = READ, WRITE and EXECUTE, superuser = all. Print who has what permissions. Revoke WRITE from developer. Print the result.
 
-4. 
+4. Build an insurance premiums calculator based on age, income, total insurance amount and number of years of insurance. Calculate and print the premium per month. Conditions to be considered - age < 21 and > 60, no eligibility. Create age slabs (21 to 35, 36 to 45 etc.) and change premium amount based on the slabs also
+
+5. Build a grading system. If marks > 85: A etc.
+
+https://github.com/pallavi-CT/python_pcep_training_june8_26
