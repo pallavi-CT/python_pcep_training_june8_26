@@ -1,0 +1,3 @@
+1. Calculate the BMI: weight / height. Use weight = 85, height = 1.75. Print the result rounded of to 2 decimal places
+
+2. Write a loan filter: given income = 45000, existing_loans = 2, age = 32. Print whether eligible for loan or not based on age, income and existing_loans.
