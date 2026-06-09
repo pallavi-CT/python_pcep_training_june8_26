@@ -1,3 +1,7 @@
 1. Calculate the BMI: weight / height. Use weight = 85, height = 1.75. Print the result rounded of to 2 decimal places
 
 2. Write a loan filter: given income = 45000, existing_loans = 2, age = 32. Print whether eligible for loan or not based on age, income and existing_loans.
+
+3. Build a permission checker for a file using bitwise flags. Define 4 permissions (READ = 1, WRITE = 2, EXECUTE = 4, ADMIN = 8). Create 3 user roles: viewer = READ, developer = READ, WRITE and EXECUTE, superuser = all. Print who has what permissions. Revoke WRITE from developer. Print the result.
+
+4. 
