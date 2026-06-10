@@ -1,0 +1,12 @@
+Scenario: You're building a user analytics backend. Server logs arrive in a fixed format. Your job is to extract date, time, and user metadata from these strings so they can be stored in a database.
+Given Data:
+timestamp  = "2024-07-15T14:30:00Z"
+email      = "  John.DOE@ACME-corp.COM  \n"
+product_id = "PRD-2024-00742"
+
+Tasks:
+1. Extract the date, time, timezone and timestamp using slicing only.
+2. Clean email - strip whitespace, lowercase it, then extract the username and domain separately.
+3. From product_id, extract the year and the numeric part
+4. Build a formatted summary string:
+"Product 00742 created on 2024-07-15 by john.doe@acme-corp.com"
