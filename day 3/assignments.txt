@@ -10,3 +10,35 @@ Tasks:
 3. From product_id, extract the year and the numeric part
 4. Build a formatted summary string:
 "Product 00742 created on 2024-07-15 by john.doe@acme-corp.com"
+
+----------------------------------------------------------------------
+Scenario: You're a developer at a SaaS company. You receive Apache-style access logs. Write a parser that extracts structured fields from each line so they can be written to a database or monitoring dashboard.
+Log Format Reference
+# Apache Common Log Format:
+# IP - - [date time zone] "METHOD /path HTTP/1.1" STATUS BYTES
+
+log_lines = [
+    '192.168.1.10 - - [15/Jul/2024:08:30:00 +0000] "GET /api/users HTTP/1.1" 200 1024',
+    '10.0.0.5 - - [15/Jul/2024:08:31:15 +0000] "POST /login HTTP/1.1" 401 256',
+    '172.16.0.3 - - [15/Jul/2024:08:32:45 +0000] "DELETE /api/items/99 HTTP/1.1" 404 128',
+]
+Tasks:
+1. Parse each log line and extract:
+    IP address, datetime string, HTTP method, path, status code, response size
+2. Flag any line where the status code starts with 4 (client errors)
+3. Format each parsed entry as:
+"[15/Jul/2024 08:30:00] 192.168.1.10 → GET /api/users — 200 OK (1024 bytes)"
+4. Count how many requests were errors (4xx or 5xx).
+
+------------------------------------------------------------------------------
+Scenario: You're building a simple leaderboard for a mobile game. Player scores come in as a flat list. You need to display rankings, find stats, and manage the board.
+
+Starter Data:
+scores = [88, 45, 92, 67, 30, 75, 95, 52, 83, 100, 12, 78]
+
+Tasks:
+1. Sort the scores in descending order and display Top 3 with labels: "Gold", "Silver", "Bronze".
+2. Remove any score below 50 (these are invalid/abandoned games).
+3. Check if score 88 is in the list, and report its rank (position) if found.
+4. Create and print a grade list: "A" if score ≥ 90, "B" if ≥ 75, else "C".
+5. Show the difference between each consecutive score in the top 5.
