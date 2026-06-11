@@ -1,0 +1,40 @@
+Scenario: Calculate the total for students.
+Starter Data:
+students = [
+    ["Prithvi", [23, 45,67,89]],
+    ["Pranav", [56, 45, 91, 66]],
+    ["Manoj", [78,67,89, 13]],
+    ["Komal", [99, 56,67,89]],
+    ["Lavanya", [90, 79, 76, 50]]
+]
+
+Tasks:
+1. compute the average for each student
+2. sort the students by average, and highest total score
+3. assign grades
+4. Calculate the class average for each subject
+
+----------------------------------------------------------
+
+Scenario: Build a book catalog system from a list of checkout records:
+
+Starter data:
+checkouts = [
+    {"isbn": "978-A", "title": "Clean Code", "genre": "Tech", "member": "M01"},
+    {"isbn": "978-B", "title": "Dune", "genre": "SciFi", "member": "M02"},
+    {"isbn": "978-A", "title": "Clean Code", "genre": "Tech", "member": "M03"},
+    {"isbn": "978-C", "title": "Sapiens", "genre": "History", "member": "M01"},
+    {"isbn": "978-B", "title": "Dune", "genre": "SciFi", "member": "M04"},
+    {"isbn": "978-D", "title": "Atomic Habits", "genre": "Self-Help", "member": "M02"},
+    {"isbn": "978-A", "title": "Clean Code", "genre": "Tech", "member": "M05"},
+]
+
+Tasks:
+1. Build a dict: isbn → checkout_count
+2. Find the most borrowed book title
+3. Group books by genre — genre → set of titles
+4. Build member reading history: member → list of titles
+5. Find members who have read books in more than one genre
+
+----------------------------------------------------------------------------
+
