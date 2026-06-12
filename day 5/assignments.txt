@@ -1,0 +1,70 @@
+Scenario: You're building inventory management for a small retail store. Products have categories, stock levels, and prices. You need to support restocking, sales, reporting, and alerts.
+
+Starter Data:
+inventory = {
+    "SKU001": {"name": "Laptop Pro 15", "category": "Electronics", "price": 1299.99, "stock": 8},
+    "SKU002": {"name": "USB-C Cable 2m", "category": "Accessories", "price": 12.99,  "stock": 3},
+    "SKU003": {"name": "Wireless Mouse", "category": "Accessories", "price": 39.99,  "stock": 22},
+    "SKU004": {"name": "Monitor 27\"", "category": "Electronics", "price": 499.00, "stock": 2},
+    "SKU005": {"name": "Desk Organizer", "category": "Office", "price": 24.99,  "stock": 15},
+}
+
+Tasks:
+1. Write restock(sku, qty) — adds quantity to existing stock. Raises error if SKU not found.
+2. Write sell(sku, qty) — reduces stock. Raises error if insufficient stock.
+3. Write low_stock_report(threshold) — prints all items with stock ≤ threshold.
+4. Calculate total inventory value (price × stock for all items).
+5. Group products by category and calculate category-level total value.
+
+--------------------------------------------------------------------------
+
+Scenario: You're merging subscriber lists from two campaigns:
+
+campaign_a = ["alice@a.com", "bob@b.com", "carol@c.com", "alice@a.com", "dave@d.com"]
+campaign_b = ["carol@c.com", "eve@e.com", "frank@f.com", "bob@b.com"]
+
+1. Deduplicate each list
+2. Find subscribers in BOTH campaigns (received 2x)
+3. Find subscribers in A but NOT B (exclusive A audience)
+4. Compile a master list (all unique subscribers)
+5. Count total duplicates removed from campaign_a
+
+--------------------------------------------------------------------------------------
+
+Scenario: You have employee skill data and a project requirements matrix:
+
+Starter data: 
+employees = {
+    "Alice": {"Python", "SQL", "Docker", "AWS"},
+    "Bob":   {"Python", "JavaScript", "React"},
+    "Carol": {"SQL", "PowerBI", "Tableau", "Python"},
+    "Dan":   {"Docker", "Kubernetes", "AWS", "Terraform"},
+}
+project_needs = {"Python", "SQL", "Docker"}
+
+Tasks:
+1. Find all skills across the entire team (union)
+2. Find skills everyone has (intersection)
+3. Find which employees can fully cover the project needs
+4. Identify skill gaps — what the project needs that no one has
+5. For each employee, show how many of the required skills they have (%)
+
+---------------------------------------------------------------------------
+
+Scenario: Reconcile inventory across warehouse systems:
+
+Starter data:
+warehouse_a = {"SKU001": 120, "SKU002": 45, "SKU003": 0, "SKU004": 88}
+warehouse_b = {"SKU001": 30,  "SKU003": 15, "SKU005": 200, "SKU006": 5}
+reorder_point = 50
+discontinued  = {"SKU003", "SKU006"}
+
+Tasks:
+1. Merge both warehouses: total stock per SKU
+2. Find SKUs only in warehouse A, only in B, and in both
+3. Identify active SKUs (not discontinued) below reorder point
+4. Build a status report dict: SKU → {"total_stock", "status": "OK"/"Low"/"Discontinued"}
+5. Calculate total inventory value given prices: {"SKU001": 25.0, "SKU002": 12.5, "SKU004": 80.0, "SKU005": 5.0}
+
+-----------------------------------------------------------------
+Create a numberical calculator. Make it menu based with function calls. Operations should be addition, subtraction, multiplication and division. Please check for zero values.

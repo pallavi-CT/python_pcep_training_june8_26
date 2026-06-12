@@ -1,0 +1,32 @@
+Functions in Python
+-> reusable
+-> named blocks of logic
+-> follows SRP (Single Responsibility Principle)
+
+def function_name(params) -> return_type:
+
+params: 
+1 mandatory (at least 1)
+2 default (after all the mandatory params)
+3 named params (variable: datatype)
+4 keyword arguments
+5. arbitrary positional arguments (*args)
+6. keyword arbitrary positional arguments (**kwargs)
+
+lamdba functions
+-> small
+-> anonymous
+-> multiple arguments
+-> used in place of small functions
+-> used to pass a function to another function
+
+decorators
+-> a fn
+-> takes another fn as input and adds functionality it and returns without changing the original fn
+
+closures
+-> function object
+-> a fn defined inside another fn
+-> inner uses outer fn variables
+-> inner fn is always returned
+-> 1 outer with 1 inner
