@@ -1,0 +1,7 @@
+Create a list of products. Write a function for adding a product, viewing products, and viewing a single product. Write a custom exception named ProductNotFoundError which is thrown when a product is not found. Create a second custom exception for ProductNotInStockError.
+
+Sample data:
+products = [
+    {'id': 'P001', 'name': 'Laptop', 'brand': 'Dell', 'price': 234560, 'stock': 9},
+    {}   
+]
