@@ -5,3 +5,42 @@ products = [
     {'id': 'P001', 'name': 'Laptop', 'brand': 'Dell', 'price': 234560, 'stock': 9},
     {}   
 ]
+
+-----------------------------------------------------------------------------------
+
+2. You have a CSV file grades.csv with columns student, math, english, science. Read the file and print each student's name and their average score across the three subjects.
+
+Your Tasks:
+1. Create grades.csv with at least 4 students
+2. Read it with DictReader
+3. Compute and print the average for each student
+4. Bonus: Print who has the highest average
+
+Sample Data:
+sample_data = [
+    {"student": "Alice",  "math": "88", "english": "92", "science": "85"},
+    {"student": "Bob",    "math": "75", "english": "80", "science": "78"},
+    {"student": "Carol",  "math": "95", "english": "89", "science": "94"},
+    {"student": "Dave",   "math": "60", "english": "72", "science": "68"},
+]
+
+----------------------------------------------------------------------------------
+
+3. Parse a structured application log file where each line is: YYYY-MM-DD HH:MM:SS [LEVEL] message. Extract ERROR lines, count occurrences per error message, and write a summary CSV with columns error_message, count, first_seen, last_seen.
+
+Your Tasks:
+1. Parse each log line using string slicing or regex
+2. Filter for lines where level == "ERROR"
+3. Track count, first_seen, last_seen per unique message
+4. Write results to error_summary.csv sorted by count descending
+
+Sample Data:
+log_data = """2024-01-15 08:10:00 [INFO] Server started
+2024-01-15 08:10:05 [ERROR] Database connection failed
+2024-01-15 08:10:12 [WARNING] High memory usage
+2024-01-15 08:11:00 [ERROR] Database connection failed
+2024-01-15 08:12:00 [ERROR] Timeout reading from cache
+2024-01-15 08:13:00 [INFO] Request processed
+2024-01-15 08:14:00 [ERROR] Database connection failed
+2024-01-15 08:15:00 [ERROR] Null pointer in payment module
+2024-01-15 08:16:00 [ERROR] Timeout reading from cache"""

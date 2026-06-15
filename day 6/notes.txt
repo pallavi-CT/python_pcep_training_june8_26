@@ -1,0 +1,17 @@
+try - except - finally
+try - except - else
+
+An exception is any event that stops a program prematurely
+
+Python Exceptions are called errors
+
+Base class -> Exception
+
+if try block executes successfully, only then will else block executes
+finally executes irrespective
+
+-----------------------------------------------
+Files: 3 types -> txt, csv, json
+
+Text files: easiest, simplest
+read(), readlines(), write(), writelines()
